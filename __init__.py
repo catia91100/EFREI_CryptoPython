@@ -24,7 +24,7 @@ def encryptage(valeur):
 def decryptage(token):
     token_bytes = token.encode()  # Conversion str -> bytes
     valeur = f.decrypt(token_bytes)  # décrypt la valeur
-    return f"Valeur décryptée : {token.decode()}"  # Retourne le token en str
+    return f"Valeur décryptée : {valeur.decode()}"  # Retourne le token en str
                                                                                                                                                      
 if __name__ == "__main__":
   app.run(debug=True)
