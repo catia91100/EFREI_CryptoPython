@@ -14,8 +14,7 @@ def hello_world():
 get_fernet(user_key):
 key_bytes = user_key.encode()
 return Fernet(key_bytes)
-except Exception as e:
-return None
+
 
 @app.route('/encrypt', methods ['GET'])
 def encryptage():
